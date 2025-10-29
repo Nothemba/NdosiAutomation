@@ -21,7 +21,7 @@ public class HomePage {
         homePagetitle.isDisplayed();
     }
 
-    public void setClickLeaningMaterialButton(){
+    public void ClickLeaningMaterialButton(){
         clickLeaningMaterial.click();
     }
 

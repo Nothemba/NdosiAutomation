@@ -55,11 +55,10 @@ public class LoginToLeaningMaterial {
     @Test(priority = 6)
     public void WebAutomationB() throws InterruptedException {
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement passwordButton = wait.until(
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(
                 ExpectedConditions.elementToBeClickable(By.id("tab-btn-password"))
         );
-        passwordButton.click();
+
 
     }
 
