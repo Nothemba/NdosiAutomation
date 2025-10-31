@@ -1,8 +1,15 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.visibilityOf;
 
 public class HomePage {
 
@@ -18,6 +25,7 @@ public class HomePage {
     }
 
     public void verifyHomepageIsDisplayed(){
+        new WebDriverWait(driver, Duration.ofSeconds(10)).until(visibilityOf(homePagetitle));
         homePagetitle.isDisplayed();
     }
 
