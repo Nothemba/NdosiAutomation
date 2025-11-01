@@ -33,11 +33,43 @@ public class myTests extends Base{
 
     @Test(priority = 6)
     public void welcomeMessageTest(){
-        webAumationAdvanced.verifyWelcomeMessage();
+        learningPage.verifyWelcomeMessage();
     }
     @Test(priority = 7)
     public void clickWebAdvancedTest(){
-        webAumationAdvanced.clickWebAdvanced();
+        learningPage.clickWebAdvanced();
     }
+    @Test(priority = 8)
+    public  void SelectDeviceTest(){
+        webAutomationAdvanced.deviceType();
+    }
+    @Test(priority = 9)
+    public void selectDeviceTypeTest(){
+        webAutomationAdvanced.Brand();
+    }
+
+    @Test(priority = 10)
+    public void selectStorageSizeTest(){
+        webAutomationAdvanced.selectStorageSize();
+    }
+    @Test(priority = 11)
+    public void selectColorTest(){
+        webAutomationAdvanced.selectColor();
+    }
+    @Test(priority = 12)
+    public void enterQuantityTest(){
+        webAutomationAdvanced.EnterQuantity();
+    }
+    @Test(priority = 13)
+    public void enterAddressTest(){
+        webAutomationAdvanced.enterAddress("123 Protea Street");
+    }
+    @Test(priority = 14)
+    public void nextButtonTest(){
+        webAutomationAdvanced.nextButton();
+    }
+
+
+
 
 }
